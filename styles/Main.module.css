@@ -1,0 +1,50 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.card {
+  text-align: center;
+  border: 2px solid #ccc;
+  padding: 1rem;
+}
+
+.avatar {
+  margin-top: 1rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: scale-down;
+}
+
+.cardBody p {
+  line-height: 0.5;
+  color: rgb(75, 74, 74);
+}
+
+.pagination {
+  list-style-type: none;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 0.2rem;
+  color: #333;
+  padding: 0.5rem 1rem;
+}
+
+.pagination li.current-page,
+.pagination li:hover {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 10%;
+}
