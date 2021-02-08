@@ -6,7 +6,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
   grid-gap: 1rem;
 }
 
@@ -31,7 +31,7 @@
 
 .pagination {
   list-style-type: none;
-  margin-top: 3rem;
+  margin: 3rem 0;
   text-align: center;
 }
 
@@ -42,7 +42,7 @@
   padding: 0.5rem 1rem;
 }
 
-.pagination li.current-page,
+.pagination li.currentPage,
 .pagination li:hover {
   background-color: #4caf50;
   color: #fff;
