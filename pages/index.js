@@ -37,4 +37,11 @@ export async function getStaticProps() {
   );
   const data = await res.json();
   const devs = data.items;
+
+  return {
+    props: {
+      devs,
+    },
+  };
+
 }
