@@ -6,7 +6,8 @@ const DevCards = ({ currentDevs, pageNumbers, currentPage, handleClick }) => {
     <div className={styles.container}>
       <div className={styles.cards}>
         {currentDevs.map((dev) => (
-          <a href={dev.html_url} title="View in GitHub">
+          <a key={dev.node.login} href={"https://github.com/"+dev.node.login} 
+          target="_blank" title="View in GitHub">
             <DevCard dev={dev} />
           </a>
         ))}
@@ -15,11 +16,10 @@ const DevCards = ({ currentDevs, pageNumbers, currentPage, handleClick }) => {
         {pageNumbers.map((pageNumber, index) => {
           return (
             <li
-
               key={index}
               onClick={handleClick}
               id={pageNumber}
-              className={currentPage === pageNumber ? styles.currentPage : ''}
+              className={currentPage === pageNumber ? styles.currentPage : ""}
             >
               {pageNumber}
             </li>

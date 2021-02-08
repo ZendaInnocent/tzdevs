@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <a href="/">
-        <h1>TzDevs</h1>
+        <h1>TzDevs 🇹🇿</h1>
       </a>
     </header>
   );

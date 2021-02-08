@@ -1,13 +1,14 @@
 import styles from "../styles/Main.module.css";
 
 export default function DevCard({ dev }) {
+  const devData = dev.node;
   return (
     <div className={styles.card}>
-      <img src={dev.avatar_url} alt="" className={styles.avatar} />
+      <img src={devData.avatarUrl} alt="" className={styles.avatar} />
       <div className={styles.cardBody}>
-        <h3 className={styles.name}>@{dev.login}</h3>
-        <p className={styles.title}>Full Stack Developer</p>
-        <p className={styles.location}>Bay Area, San Francisco</p>
+        <h3 className={styles.name}>@{devData.login}</h3>
+        <p className={styles.title}>{devData.company}</p>
+        <p className={styles.location}>{devData.location}</p>
       </div>
     </div>
   );
