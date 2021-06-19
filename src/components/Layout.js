@@ -1,5 +1,5 @@
-import Head from "next/head";
-import styles from "../styles/Layout.module.css";
+import Head from 'next/head';
+import styles from '../styles/Layout.module.css';
 
 export default function Layout({ children }) {
   return (
@@ -8,7 +8,7 @@ export default function Layout({ children }) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="A website that show GitHub users whose location is Tanzania"
         />
       </Head>
       {children}

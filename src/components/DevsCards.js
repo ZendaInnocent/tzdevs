@@ -1,12 +1,12 @@
-import styles from "../styles/Main.module.css";
-import DevCard from "./DevCard";
+import styles from '../styles/Main.module.css';
+import DevCard from './DevCard';
 
 const DevCards = ({ currentDevs, pageNumbers, currentPage, handleClick }) => {
   return (
     <div className={styles.container}>
       <div className={styles.cards}>
         {currentDevs.map((dev) => (
-          <a href={dev.html_url} title="View in GitHub">
+          <a href={dev.html_url} title="View in GitHub" target="_new">
             <DevCard dev={dev} />
           </a>
         ))}
@@ -15,7 +15,6 @@ const DevCards = ({ currentDevs, pageNumbers, currentPage, handleClick }) => {
         {pageNumbers.map((pageNumber, index) => {
           return (
             <li
-
               key={index}
               onClick={handleClick}
               id={pageNumber}
