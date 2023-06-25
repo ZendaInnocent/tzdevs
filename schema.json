@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "",
+  "properties": {
+    "price": {
+      "description": "A price of a product",
+      "type": "string"
+    }
+  },
+  "required": ["price"]
+}
